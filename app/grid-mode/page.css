@@ -1,0 +1,13 @@
+.gridButton{
+    background-color: green;
+    border-radius: 10%/90%;
+    align-self: center;
+    width: 180px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.posList{
+    position: relative;
+}

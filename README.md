@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Node Rover
 
-## Getting Started
+## Uploading and getting started
 
-First, run the development server:
+Download and keep all required files in a folder named `nodeRover`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Download the latest Arduino IDE
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install all packages required for ESP32
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open the ino file and connect your esp32 to your computer
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Make sure the correct port number is selected and the arduino detects the esp32
 
-## Learn More
+Set the BAUD rate to 9600
 
-To learn more about Next.js, take a look at the following resources:
+Set the credentials of the wifi network in secrets.hpp file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Turn on the node rover and upload the code
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Open the serial monitor once the code finishes uploading
 
-## Deploy on Vercel
+You should see the esp32 trying to connect to a network and printing out an IP address once it connects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open the node-rover-website code and add the IP address there.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Navigate to the node-rover-website folder
+
+run npm install to install all necessary packages
+
+run the command npm run dev to run the website
+
+You should get a local website on the terminal (probably localhost:3000)
+
+Open this link on your browser.
+
+You can control the node-rover using the website
+
+Hooray

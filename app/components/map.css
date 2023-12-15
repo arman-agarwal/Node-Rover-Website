@@ -1,0 +1,7 @@
+image{
+    transition: x 1s, y 1s;
+}
+
+.box{
+  border: black 1mm solid;
+}
